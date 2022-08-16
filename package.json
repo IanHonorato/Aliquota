@@ -1,0 +1,23 @@
+{
+  "name": "Aliquota",
+  "version": "1.0.0",
+  "description": "Projeto de Cálculo de imposto de renda sobre um produto financeiro em relação ao tempo de retirada.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IanHonorato/Aliquota.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IanHonorato/Aliquota/issues"
+  },
+  "homepage": "https://github.com/IanHonorato/Aliquota#readme",
+  "devDependencies": {
+    "jest": "^28.1.3"
+  }
+}
