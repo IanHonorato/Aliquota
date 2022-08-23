@@ -1,0 +1,12 @@
+[
+    { 
+      "name": "Produto A", 
+      "rentability": 20,
+      "price": 10.83 
+    },
+    {
+        "name": "Produto B", 
+        "rentability": 8,
+        "price": 9.00 
+    }
+  ]
