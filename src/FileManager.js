@@ -1,15 +1,21 @@
-//function readJson(){
+export function readJson(fileName){
     const fs = require("fs");
    
-    // Read users.json file
-    fs.readFile("repository/products.json", function(err, data) {
-      
-    // Check for errors
-    if (err) throw err;
-   
-    // Converting to JSON
-    const products = JSON.parse(data);
+    fs.readFile("repository/" + fileName + ".json", function(err, data) {
+        if (err) throw err;
     
-    console.log(products[0].name);
-});
-//}
+        const objects = JSON.parse(data);
+        return objects;
+    });
+}
+
+export function writeJson(fileName, object){
+    const fs = require("fs");
+    const objects = require("repository/" + fileName + ".json");
+   
+    objects.push(object);
+    
+    fs.writeFile("repository/" + fileName + ".json", JSON.stringify(object), err => {
+        if (err) throw err; 
+    });
+}
